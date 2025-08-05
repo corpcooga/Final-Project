@@ -114,3 +114,17 @@ a {
 a:hover {
 	color: slateblue;
 }
+
+iframe {
+    border-radius: 20px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+	display: grid;
+	/* TODO make responsive */
+	grid-template-columns: auto auto;
+	grid-gap: 10px 20px;
+	margin: 10px 0;
+	max-width: 1200px;
+}
