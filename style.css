@@ -21,6 +21,7 @@ header, footer {
 	color: aliceblue;
 }
 
+/* header and navigation styling */
 header {
 	display: flex;
 	justify-content: space-between;
@@ -29,6 +30,7 @@ header {
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* footer styling */
 footer {
 	text-align: center;
 	padding: 0.5rem;
@@ -84,6 +86,7 @@ section {
 	width: calc(100% - 40px);
 }
 
+/* section heading styling */
 h2 {
 	font-size: 1.6rem;
 	color: darkblue;
@@ -93,32 +96,38 @@ h2 {
 	margin-bottom: 1rem;
 }
 
+/* styling for description of each page */
 .page-description p {
 	text-align: center;
 	font-size: 1.2rem;
 	font-weight: bold;
 }
 
+/* home page alternate navigation message styling */
 #getstarted {
 	text-align: center;
 	font-size: 1.2rem;
 	font-weight: bold;
 }
 
+/* link styling */
 a {
 	color: slateblue;
 	text-decoration: none;
 }
 
+/* link hover color change */
 a:hover {
 	color: lightskyblue;
 }
 
+/* apple music song styling */
 iframe {
     border-radius: 20px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* grid layout for song recommendations */
 .container {
 	display: grid;
 	/* TODO make responsive */
@@ -127,12 +136,14 @@ iframe {
 	margin: 10px 0;
 }
 
+/* single song styling */
 #special-song {
 	display: flex;
 	justify-content: center;
 	margin: 10px 0;
 }
 
+/* playlist section description styling */
 #playlist-description {
 	text-align: center;
 	font-size: 1.2rem;
@@ -140,31 +151,33 @@ iframe {
 	margin: 20px 0 30px 0;
 }
 
+/* playlist icon styling */
 .playlist_icon {
 	width: 100%;
 	border-radius: 20%;
 	transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-/* TODO add more effects */
+/* playlist icon hover animations */
 .playlist_icon:hover {
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
 	transform: scale(1.02);
 }
 
+/* playlist table styling */
 table {
-	width: 50%;
-	border-spacing: 20px 10px;
 	border-collapse: collapse;
 	margin: 20px 0;
 }
 
+/* table border and spacing */
 td {
 	border-top: 2px solid silver;
 	border-bottom: 2px solid silver;
 	padding: 3% 2%;
 }
 
+/* playlist names size */
 h3 {
 	font-size: 1.4rem;
 }
