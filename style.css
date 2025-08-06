@@ -106,12 +106,12 @@ h2 {
 }
 
 a {
-	color: mediumslateblue;
+	color: slateblue;
 	text-decoration: none;
 }
 
 a:hover {
-	color: slateblue;
+	color: lightskyblue;
 }
 
 iframe {
