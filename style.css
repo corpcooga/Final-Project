@@ -40,7 +40,7 @@ header {
 	}
 }
 
-/* navigation links styling */
+/* nav link formatting and styling */
 .nav-links {
 	font-size: 1.2rem;
 	list-style: none;
@@ -49,7 +49,7 @@ header {
 	padding: 0;
 }
 
-/* nav link styling */
+/* individual nav link styling */
 .nav-links a {
 	color: aliceblue;
 	text-decoration: none;
@@ -58,13 +58,13 @@ header {
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* nav link hover styling */
+/* individual nav link hover styling */
 .nav-links a:hover {
 	background-color: rgb(0, 0, 0, 0.2);
 	color: mediumslateblue;
 }
 
-/* active nav link styling */
+/* current page nav link styling */
 span.active {
 	font-weight: bold;
 	color: aliceblue;
@@ -83,13 +83,13 @@ span.active {
 	}
 }
 
-/* site title styling */
+/* main title styling */
 .site-title {
 	font-size: 1.8rem;
 	font-weight: bold;
 }
 
-/* content styling */
+/* content backing styling */
 section {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background-color: white;
