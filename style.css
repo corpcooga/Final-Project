@@ -30,20 +30,7 @@ header {
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* footer styling */
-footer {
-	text-align: center;
-	padding: 0.5rem;
-	box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* site title styling */
-.site-title {
-	font-size: 1.8rem;
-	font-weight: bold;
-}
-
-/* TODO make nav links stack vertically based on screen size */
+/* navigation links styling */
 .nav-links {
 	font-size: 1.2rem;
 	list-style: none;
@@ -72,10 +59,36 @@ span.active {
 	color: aliceblue;
 }
 
+/* site title styling */
+.site-title {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+/* stack header elements vertically on small screens */
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav-links {
+		flex-direction: column;
+		text-align: center;
+		gap: 1.2rem;
+	}
+	.nav-links li:first-child {
+		margin-top: 0.4rem;
+	}
+	.nav-links li:last-child {
+		margin-bottom: 1rem;
+	}
+}
+
 /* content styling */
 section {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background-color: white;
+	border: 1px solid lightgray;
 	color: black;
 	padding: 1rem 2rem;
 	border-radius: 20px;
@@ -180,4 +193,11 @@ td {
 /* playlist names size */
 h3 {
 	font-size: 1.4rem;
+}
+
+/* footer styling */
+footer {
+	text-align: center;
+	padding: 0.5rem;
+	box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
 }
