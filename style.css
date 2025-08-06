@@ -131,6 +131,7 @@ h2 {
 a {
 	color: slateblue;
 	text-decoration: none;
+	transition: color 0.1s ease;
 }
 
 /* link hover color change */
