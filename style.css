@@ -94,7 +94,6 @@ section {
 	border-radius: 20px;
 	box-sizing: border-box;
 	margin: 20px auto;
-	/* TODO make multiple max widths based on screen size? */
 	max-width: 960px;
 	width: calc(100% - 40px);
 }
@@ -143,10 +142,16 @@ iframe {
 /* grid layout for song recommendations */
 .container {
 	display: grid;
-	/* TODO make responsive */
 	grid-template-columns: auto auto;
 	gap: 10px 20px;
 	margin: 10px 0;
+}
+
+/* grid layout becomes one column on smaller screens */
+@media screen and (max-width: 768px) {
+	.container {
+		grid-template-columns: auto;
+	}
 }
 
 /* single song styling */
