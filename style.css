@@ -25,9 +25,19 @@ header, footer {
 header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center; /* center vertically */
+	align-items: center; /* center on opposite of current axis */
 	padding: 0 2rem;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* stack header elements vertically on small screens */
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: stretch;
+		text-align: center;
+		padding: 0;
+	}
 }
 
 /* navigation links styling */
@@ -44,11 +54,6 @@ header {
 	color: aliceblue;
 	text-decoration: none;
 	font-weight: 500;
-	transition: color 0.3s ease;
-}
-
-/* navigation links spacing */
-.nav-links a {
 	padding: 1.8rem 0.75rem;
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -66,30 +71,22 @@ span.active {
 	padding: 1.8rem 0.75rem;
 }
 
+/* nav links spacing styling on smaller screens */
+@media screen and (max-width: 768px) {
+	.nav-links {
+		flex-direction: column;
+		margin-bottom: 1rem;
+	}
+	.nav-links a, span.active {
+		padding: 0.5rem;
+		display: block;
+	}
+}
+
 /* site title styling */
 .site-title {
 	font-size: 1.8rem;
 	font-weight: bold;
-}
-
-/* TODO fix */
-/* stack header elements vertically on small screens */
-@media screen and (max-width: 768px) {
-	header {
-		flex-direction: column;
-		align-items: center;
-	}
-	.nav-links {
-		flex-direction: column;
-		text-align: center;
-		gap: 1.2rem;
-	}
-	.nav-links li:first-child {
-		margin-top: 0.4rem;
-	}
-	.nav-links li:last-child {
-		margin-bottom: 1rem;
-	}
 }
 
 /* content styling */
