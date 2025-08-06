@@ -211,3 +211,40 @@ footer {
 	padding: 0.5rem;
 	box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* message box styling */
+input[type=text] {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1rem 1rem;
+	border: 1px solid lightgray;
+	border-radius: 1rem;
+	outline: none;
+	transition: border 0.3s ease;
+}
+
+/* message box focus effect */
+input[type=text]:focus {
+	border: 1px solid gray;
+}
+
+/* submit button styling */
+input[type=submit] {
+	background: linear-gradient(to right, navy, darkslateblue);
+	color: aliceblue;
+	background-size: 200%;
+	padding: 1rem;
+	margin: 1rem 0;
+	width: 100%;
+	border: none;
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: box-shadow 0.3s ease, background-position 0.3s ease;
+}
+
+/* submit button hover effect */
+input[type=submit]:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+	background-position: right; /* slides the background */
+}
